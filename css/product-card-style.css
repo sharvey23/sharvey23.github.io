@@ -1,3 +1,8 @@
+img {
+  height: 10%;
+  width: 10%;
+}
+
 .product-card {
   display: flex;
   margin: 10px;
