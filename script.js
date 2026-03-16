@@ -10,6 +10,8 @@ cars.forEach(car=>{
 let card=document.createElement("div");
 card.className="card";
 
+// I will admit I used AI to help with this part; I wasn't sure how to get the cards to generate based on data.js
+  
 card.innerHTML=`
 
 <h3>${car.year} ${car.make} ${car.model}</h3>
