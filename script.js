@@ -7,14 +7,10 @@ container.innerHTML="";
 
 cars.forEach(car=>{
 
-const card=document.createElement("div");
+let card=document.createElement("div");
 card.className="card";
 
 card.innerHTML=`
-
-<img src="${car.image}">
-
-<div class="card-body">
 
 <h3>${car.year} ${car.make} ${car.model}</h3>
 
@@ -24,7 +20,10 @@ card.innerHTML=`
 
 <p>Color: ${car.color}</p>
 
-</div>
+<p>${car.gasMileage}</p>
+
+<button>View Details</button>
+
 `;
 
 container.appendChild(card);
@@ -33,34 +32,27 @@ container.appendChild(card);
 
 }
 
-
 function filterCars(){
 
 let minYear=document.getElementById("minYear").value;
 let maxYear=document.getElementById("maxYear").value;
+let make=document.getElementById("make").value.toLowerCase();
 let maxMileage=document.getElementById("maxMileage").value;
 let minPrice=document.getElementById("minPrice").value;
 let maxPrice=document.getElementById("maxPrice").value;
-
-let selectedMakes=[...document.querySelectorAll(".make:checked")].map(el=>el.value);
-let selectedColors=[...document.querySelectorAll(".color:checked")].map(el=>el.value);
-
+let color=document.getElementById("color").value.toLowerCase();
 
 let filtered=usedCars.filter(car=>{
 
-return (
+return(
 
 (!minYear || car.year>=minYear) &&
 (!maxYear || car.year<=maxYear) &&
-
-(selectedMakes.length===0 || selectedMakes.includes(car.make)) &&
-
+(!make || car.make.toLowerCase().includes(make)) &&
 (!maxMileage || car.mileage<=maxMileage) &&
-
 (!minPrice || car.price>=minPrice) &&
 (!maxPrice || car.price<=maxPrice) &&
-
-(selectedColors.length===0 || selectedColors.includes(car.color))
+(!color || car.color.toLowerCase().includes(color))
 
 );
 
@@ -80,7 +72,6 @@ displayCars(filtered);
 
 }
 
-
-document.getElementById("applyFilters").addEventListener("click",filterCars);
+document.getElementById("filterBtn").addEventListener("click",filterCars);
 
 displayCars(usedCars);
