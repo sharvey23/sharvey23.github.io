@@ -1,77 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
+
 <title>Used Car Dealership</title>
 
 <link rel="stylesheet" href="styles.css">
 
 <script src="data.js"></script>
 <script defer src="script.js"></script>
+
 </head>
 
 <body>
 
 <header>
-<h1>Premium Used Cars</h1>
+<h1>Used Car Dealership</h1>
 </header>
 
 <section class="filters">
 
 <h2>Filter Cars</h2>
 
-<div class="filter-group">
 <label>Min Year</label>
-<input type="number" id="minYear" placeholder="2005">
+<input type="number" id="minYear">
 
 <label>Max Year</label>
-<input type="number" id="maxYear" placeholder="2024">
-</div>
+<input type="number" id="maxYear">
 
-<div class="filter-group">
-<label>Car Make</label>
+<br><br>
 
-<label><input type="checkbox" value="Toyota" class="make"> Toyota</label>
-<label><input type="checkbox" value="Ford" class="make"> Ford</label>
-<label><input type="checkbox" value="Honda" class="make"> Honda</label>
-<label><input type="checkbox" value="Lexus" class="make"> Lexus</label>
-<label><input type="checkbox" value="BMW" class="make"> BMW</label>
-</div>
+<label>Make</label>
+<input type="text" id="make" placeholder="Toyota, Honda etc">
 
-<div class="filter-group">
+<br><br>
+
 <label>Max Mileage</label>
-<select id="maxMileage">
-<option value="">Any</option>
-<option value="15000">Under 15,000</option>
-<option value="30000">Under 30,000</option>
-<option value="60000">Under 60,000</option>
-<option value="100000">Under 100,000</option>
-</select>
-</div>
+<input type="number" id="maxMileage">
 
-<div class="filter-group">
+<br><br>
+
 <label>Min Price</label>
-<input type="number" id="minPrice" placeholder="5000">
+<input type="number" id="minPrice">
 
 <label>Max Price</label>
-<input type="number" id="maxPrice" placeholder="25000">
-</div>
+<input type="number" id="maxPrice">
 
-<div class="filter-group">
+<br><br>
+
 <label>Color</label>
+<input type="text" id="color" placeholder="Black, White etc">
 
-<label><input type="checkbox" value="Black" class="color"> Black</label>
-<label><input type="checkbox" value="White" class="color"> White</label>
-<label><input type="checkbox" value="Silver" class="color"> Silver</label>
-<label><input type="checkbox" value="Red" class="color"> Red</label>
-</div>
+<br><br>
 
-<button id="applyFilters">Apply Filters</button>
+<button id="filterBtn">Apply Filters</button>
 
 </section>
 
-
-<section id="carContainer" class="car-container"></section>
+<section id="carContainer" class="carContainer"></section>
 
 <p id="noResults"></p>
 
