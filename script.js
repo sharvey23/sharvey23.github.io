@@ -61,7 +61,7 @@ return(
 if(filtered.length===0){
 
 container.innerHTML="";
-noResults.innerText="No cars match your filter criteria. Please try again.";
+noResults.innerText="No cars found using current filters.";
 
 }else{
 
