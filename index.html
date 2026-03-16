@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 <title>Used Car Dealership</title>
@@ -18,48 +18,84 @@
 <h1>Used Car Dealership</h1>
 </header>
 
-<section class="filters">
+<main>
 
+<section class="filters">
 <h2>Filter Cars</h2>
 
-<label>Min Year</label>
-<input type="number" id="minYear">
+<form id="filterForm">
 
-<label>Max Year</label>
-<input type="number" id="maxYear">
+<fieldset>
+<legend>Year</legend>
 
-<br><br>
+<label for="minYear">Min Year</label>
+<input type="number" id="minYear" name="minYear">
 
-<label>Make</label>
-<input type="text" id="make" placeholder="Toyota, Honda etc">
+<label for="maxYear">Max Year</label>
+<input type="number" id="maxYear" name="maxYear">
 
-<br><br>
+</fieldset>
 
-<label>Max Mileage</label>
-<input type="number" id="maxMileage">
+<br>
 
-<br><br>
+<fieldset>
+<legend>Make</legend>
 
-<label>Min Price</label>
-<input type="number" id="minPrice">
+<label for="make">Make</label>
+<input type="text" id="make" name="make" placeholder="Toyota, Honda etc">
 
-<label>Max Price</label>
-<input type="number" id="maxPrice">
+</fieldset>
 
-<br><br>
+<br>
 
-<label>Color</label>
-<input type="text" id="color" placeholder="Black, White etc">
+<fieldset>
+<legend>Mileage</legend>
 
-<br><br>
+<label for="maxMileage">Max Mileage</label>
+<input type="number" id="maxMileage" name="maxMileage">
 
-<button id="filterBtn">Apply Filters</button>
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Price</legend>
+
+<label for="minPrice">Min Price</label>
+<input type="number" id="minPrice" name="minPrice">
+
+<label for="maxPrice">Max Price</label>
+<input type="number" id="maxPrice" name="maxPrice">
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Color</legend>
+
+<label for="color">Color</label>
+<input type="text" id="color" name="color" placeholder="Black, White etc">
+
+</fieldset>
+
+<br>
+
+<button type="button" id="filterBtn">Apply Filters</button>
+
+</form>
 
 </section>
 
-<section id="carContainer" class="carContainer"></section>
+<section id="carContainer" class="carContainer" aria-live="polite"></section>
 
+<section>
 <p id="noResults"></p>
+</section>
+
+</main>
+
+<footer></footer>
 
 </body>
 </html>
