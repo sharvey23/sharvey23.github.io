@@ -5,12 +5,12 @@
 .site-index {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: minmax(0, 1fr);
-  padding: clamp(1rem, 4vw, 3rem);
-  gap: 1rem;
-  width: 80%;
-  box-sizing: border-box;
+  grid-auto-columns: max-content;
   justify-content: center;
+  gap: 1.5rem; 
+  padding: clamp(1rem, 4vw, 3rem);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .site-index div {
