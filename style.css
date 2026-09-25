@@ -1,1 +1,13 @@
+.body {
+  background-color: #9e9e9e;
+}
 
+.site-index {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  padding: clamp(1rem, 4vw, 3rem);
+  gap: 1rem;
+  width: 80%;
+  box-sizing: border-box; 
+}
