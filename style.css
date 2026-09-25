@@ -10,7 +10,7 @@
   gap: 1rem;
   width: 80%;
   box-sizing: border-box;
-  margin-inline: auto;
+  justify-content: center;
 }
 
 .site-index div {
