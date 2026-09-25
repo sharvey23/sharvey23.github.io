@@ -11,3 +11,8 @@
   width: 80%;
   box-sizing: border-box; 
 }
+
+.site-index div {
+  padding: 10px;
+  text-align: center;
+}
