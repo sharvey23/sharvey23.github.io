@@ -27,3 +27,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.site-index div a:hover {
+  text-decoration: uderline;
+}
+
+.site-index div a {
+  text-decoration: none;
+}
