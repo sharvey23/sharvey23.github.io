@@ -35,3 +35,18 @@ body {
 .site-index div a {
   text-decoration: none;
 }
+
+.progress-report {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 80%
+  border: 15px solid #000000;
+}
+
+.report-date {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
