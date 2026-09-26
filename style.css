@@ -12,7 +12,7 @@
   grid-auto-columns: max-content;
   justify-content: center;
   gap: 1.5rem; 
-  padding: clamp(1rem, 4vw, 3rem);
+  padding: clamp(0.33rem, 1.33vw, 1rem) 4vw;
   width: 100%;
   box-sizing: border-box;
 }
