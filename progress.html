@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Progress Reports</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="site-index">
+      <div><a href="index.html">Home</a></div>
+      <div><a href="proposal.html">Proposal</a></div>
+      <div><a href="progress.html">Progress Reports</a></div>
+    </div>
+    <h1 style="text-align:center;">Progress Reports</h1>
+    <div class="progress-report">
+      <p class="report-date">10/31/2026</p>
+      <p>This look into these technologies will start with a company that specializes in this field, Resemble.AI. The list of parts of an audio that a system will typically check includes synthetic-sounding speech, unnatural pitch or artifacts, deviations that fall outside human norms, and lack of consistent background noise, while video will be scanned for visual artifacts, distortions around the edges of a face, impossible movements between frames, and analyze the video’s metadata (Ahmed, 2026).
+Resemble.AI also lists a few different common implementation techniques, the first being forensic analysis. Forensic analysis occurs offline or in “batches”, meaning multiple checks are performed at the same time. This implementation is best suited for investigative purposes, and so will likely be our implementation of the technology. Forensic analysis most frequently uses a system of confidence scoring based on the likelihood of the presented media being a deepfake (Ahmed, 2026). The other common implementation of deepfake detection is real-time analysis. It is harder to generate a confidence score in real time, so this implementation is better suited for a flag-based system that will keep track of suspicious points of interest.
+Data Sets, Deployment, and Ethics
+The most effective way to detect a deepfake using software is an AI trained to do it. However, an AI must be trained on data sets. Luckily, there are a plethora of data sets we can use. The most recent and 2025 benchmarked approved one we can use is the Hidf dataset, which contains a mix of real and fake images and videos. For audio, we can use the AUDETER dataset, which has thousands of audio files free to use under the Creative Commons license.
+For deployment of our model, I suggest we investigate the DeepFake-Detect model, which lets you train it on your own data sets. This will allow us to fine-tune the model if it does not meet the standards we want it to. The datasets are the most critical part of this approach to our project, and in a world where the quality of deepfakes are approaching nearly impossible for humans to detect with the naked eye, it is critical that our system is at least scaleable.
+Additionally, it is very important to address some potential ethical concerns people may have about this system. If the public datasets listed are used, then all there would be to worry about is hosting. Making the system locally hosted rather than on a cloud solves the issue of data center usage, makes it available for anyone with a sufficient device to utilize without an exorbitant price, and, as an added bonus, costs nothing for us. The goal should be a minimal, free, and easy-to-use application (or simply a working application framework) that will allow anyone who wants to install it a way to easily verify the authenticity of media.
+</p>
+    </div>
+  </body>
+</html>
