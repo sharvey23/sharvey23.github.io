@@ -37,16 +37,25 @@ body {
 }
 
 .progress-report {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  width: 80%
-  border: 15px solid #000000;
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 50px 25px 25px 25px;
+    margin: 20px 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333;
 }
 
 .report-date {
-  position: absolute;
-  top: 16px;
-  left: 16px;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
